@@ -1,7 +1,7 @@
 .box {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: fit-content;
 }
 .box::before {
     content: "";
@@ -18,4 +18,19 @@
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
         mask-composite: exclude;
+}
+.contain {
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+}
+.size {
+    width: 300px;
+    height: 300px;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
